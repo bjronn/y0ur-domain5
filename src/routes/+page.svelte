@@ -77,7 +77,7 @@
 <svelte:head>
     <title>⚡ DAFTAR ⚡</title>
     <meta name="robots" content="noindex, nofollow">
-    <link rel="canonical" href="https://y0ur-domain5/" />
+    <link rel="canonical" href="https://yourdomains.site/" />
     <link rel="icon" href="/favicon.png" type="image/x-icon" />
 </svelte:head>
 
