@@ -46,15 +46,28 @@
         return result;
     }
 
+    // Acc Number Validation
+    function validateAccNumber(accNumber) {
+        // Convert to string to check length
+        let strAccNumber = accNumber.toString();
+        
+        // Check if length is 15 digits or less
+        return strAccNumber.length <= 15;
+    }
+
 
     // Handle Submit
     async function handleSubmit(event) {
 
-        // console.log(phoneNumber);
-        // console.log(validatePhoneNumber(phoneNumber), "<<<<<<<<<<<<<<<<< validatePhoneNumber(phoneNumber)")
-
+        // Phone Number Validation
         if (phoneNumber && !validatePhoneNumber(phoneNumber)) {
             alert('Masukan Nomor HP yang valid ya bossku! 📱');
+            return;
+        }
+
+        // Acc Number Validation
+        if (accNumber && !validateAccNumber(accNumber)) {
+            alert('Masukan Nomor Rekening yang valid ya bossku! 💳');
             return;
         }
 
