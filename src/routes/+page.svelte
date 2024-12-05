@@ -20,7 +20,7 @@
     const listBanks = ['BCA', 'MANDIRI', 'BNI', 'BRI', 'CIMB', 'DANAMON', 'BSI', 'LAINNYA'];
     const listPulsa = ['TELKOMSEL', 'XL'];
     const listEmoney = ['DANA', 'GOPAY', 'OVO', 'LINKAJA', 'SHOPEEPAY'];
-    const games = ['SLOT ONLINE', 'POKER ONLINE', 'TOGEL ONLINE', 'LIVE CASINO', 'SPACEMAN', 'JUDI BOLA', 'SBOBET', 'SV388', 'JOKER123'];
+    const games = ['SLOT ONLINE', 'POKER ONLINE', 'TOGEL ONLINE', 'LIVE CASINO', 'SPACEMAN', 'TEMBAK IKAN', 'JUDI BOLA', 'SBOBET', 'SV388', 'JOKER123'];
 
 
     // Phone validation
@@ -98,7 +98,7 @@
 
 <!-- META -->
 <svelte:head>
-    <title>⚡ DAFTAR ⚡</title>
+    <title>REGISTER JUDI ONLINE</title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="canonical" href="https://yourdomains.site/" />
     <link rel="icon" href="/favicon.png" type="image/x-icon" />
@@ -109,7 +109,7 @@
     <!-- Form -->
     <div class="flex items-center justify-center">
         <div class="p-8 shadow-lg w-full max-w-2xl">
-            <h2 class="text-2xl font-bold mb-6 text-center">⚡ DAFTAR ⚡</h2>
+            <h2 class="text-2xl font-bold mb-6 text-center">Daftar Akun Baru</h2>
             <form on:submit|preventDefault={handleSubmit} action="/" method="POST" class="space-y-4">
             
                 
@@ -218,7 +218,7 @@
 
 
             <div>
-                <label for="phoneNumber" class="block mb-1">Nomor WA:</label>
+                <label for="phoneNumber" class="block mb-1">Nomor WA / Telegram:</label>
                 <input
                 type="number"
                 id="phoneNumber"
@@ -272,13 +272,13 @@
                     required
                     class="mr-2"
                     />
-                    <small>Saya menyatakan bahwa saya berusia setidaknya 18 tahun atau usia legal minimum di negara tempat tinggal saya (mana yang lebih tinggi) serta telah membaca, memahami, dan menyetujui syarat dan ketentuan. Saya juga bersedia menerima email promosi.</small>
+                    <small>Dengan klik tombol Gabung, saya menyatakan bahwa saya berumur diatas 18 tahun. Saya telah membaca dan menyetujui Syarat dan Ketentuan dari agen judi online.</small>
                 </label>
             </div>
             <button
                 type="submit"
                 class="btn btn-primary btn-block uppercase">
-                Submit
+                GABUNG
             </button>
             </form>
         </div>
