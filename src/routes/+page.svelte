@@ -55,9 +55,19 @@
         return strAccNumber.length <= 15;
     }
 
+    // Add this validation function after the other validation functions
+    function validateAccName(accName) {
+        return /^[A-Za-z\s]+$/.test(accName);
+    }
+
 
     // Handle Submit
     async function handleSubmit(event) {
+        // Add this validation check before the phone number validation
+        if (accName && !validateAccName(accName)) {
+            alert('Masukan Nama yang valid ya bossku! 📝');
+            return;
+        }
 
         // Phone Number Validation
         if (phoneNumber && !validatePhoneNumber(phoneNumber)) {
