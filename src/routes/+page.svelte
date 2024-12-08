@@ -22,6 +22,7 @@
     const listEmoney = ['DANA', 'GOPAY', 'OVO', 'LINKAJA', 'SHOPEEPAY'];
     const games = ['SLOT ONLINE', 'POKER ONLINE', 'TOGEL ONLINE', 'LIVE CASINO', 'SPACEMAN', 'TEMBAK IKAN', 'JUDI BOLA', 'SBOBET', 'SV388', 'JOKER123'];
 
+    let isLoading = false;
 
     // Phone validation
     function validatePhoneNumber(phoneNumber) {
@@ -81,6 +82,8 @@
             return;
         }
 
+        isLoading = true;
+
         const formData = new FormData(event.target);
         const response = await fetch('/', {
             method: 'POST',
@@ -93,6 +96,7 @@
         } else {
             alert(result.error);
         }
+        isLoading = false;
     }
 </script>
 
@@ -277,8 +281,12 @@
             </div>
             <button
                 type="submit"
-                class="btn btn-primary btn-block uppercase">
-                GABUNG
+                class="btn btn-primary btn-block uppercase"
+                disabled={isLoading}>
+                {#if isLoading}
+                    <span class="loading loading-spinner text-warning"></span>
+                {/if}
+                {isLoading ? 'Loading...' : 'GABUNG'}
             </button>
             </form>
         </div>
